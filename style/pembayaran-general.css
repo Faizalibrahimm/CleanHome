@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  
+  header {
+    background-color: lightskyblue;
+    width: 100%;
+    height: 15vh;
+  }
+  
+  .hcontainer {
+    display: flex;
+    width: 85%;
+    height: 15vh;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 6%;
+    height: 70%;
+  }
+  
+  .logoimg {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .navigasi-btn {
+    display: flex;
+    list-style: none;
+  }
+  
+  .navigasi-btn li {
+    margin-left: 24px;
+  }
+  
+  .navigasi-btn a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navigasi-btn a:hover {
+    color: red;
+  }
+
+  main {
+    width: 100%;
+    height: 80vh;
+    padding: 20px 0;
+    background: rgb(255, 255, 255);
+  background: linear-gradient(
+    175deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 40%,
+    lightskyblue 100%
+  );
+
+  }
+
+.container1 {
+    display: flex;
+    width: 80%;
+    height: 15%;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 20px;
+}  
+
+.pkotak {
+    border: 2px solid lightskyblue;
+    display: flex;
+    width: 8%;
+    height: 100%;
+    margin-left: -20px;
+}
+
+.pgambar {
+    width: 100%;
+    height: 100%;
+}
+
+.container2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 25%;
+    margin: auto;
+}
+
+.fnama {
+    width: 100%;
+    height: 30%;
+}
+
+.fnama input {
+    width: 100%;
+}
+
+.ftelepon {
+    width: 320px;
+    height: 30%;
+    margin-top: 12px;
+}
+
+.ftelepon input {
+    width: 320px;
+}
+
+.falamat {
+    width: 320px;
+    height: 30%;
+    margin-top: 12px;
+}
+
+.falamat input {
+    width: 320px;
+}
+
+.container3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 40%;
+    margin: auto;   
+}
+
+.pdetail {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 30px;
+    margin-bottom: 5%;
+}
+
+.pdetail h3 {
+    margin-bottom: 10px;
+}
+
+.princian {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    height: 65px;
+}
+
+.princian h3{
+    margin-bottom: 10px;
+}
+
+.container4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 35%;
+    height: 20%;
+    margin: auto;   
+}
+
+.ptotal {
+    border: 2px solid black;
+    width: 50%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-order {
+    background-color: lightskyblue;
+    width: 50%;
+    height: 40%; 
+    align-items: center; 
+    text-align: center; 
+    font-weight: bold;
+    cursor: pointer;
+}
+footer {
+    background-color: lightskyblue;
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+.ftext {
+    font-size: 12px;
+}
