@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CleanHome</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style/ac-cleaning.css">
+  <link rel="stylesheet" href="style/detail-layanan.css">
 </head>
 
 <body>
@@ -16,8 +16,10 @@
       <ul class="navigasi-btn">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="tentang.html">Tentang Kami</a></li>
-        <li><a href="layanan.html" style="color: red;">Layanan</a></li>
-        <li><a href="daftar.html">Daftar</a></li>
+        <li><a href="layanan.html"
+            style="text-decoration: underline; text-underline-offset: 8px; text-decoration-color: white;">Layanan</a>
+        </li>
+        <li><a href="masuk.html">Masuk</a></li>
       </ul>
     </nav>
   </header>
@@ -29,8 +31,8 @@
       <h2>AC Cleaning</h2>
     </div>
 
-    <div class="img1"> <img class="imgdalam" src="images/ac-cleaning-img.png" alt="general cleaning" />
-
+    <div class="img1">
+      <img class="imgdalam" src="images/acrill-img.jpg" alt="general cleaning" />
       <div class="text2">
         <span>
           Dengan <strong>CleanHome</strong> <br> AC terasa seperti baru!
@@ -40,13 +42,9 @@
           <li>Jasa cuci AC dan isi Freon AC <br>mulai dari <strong>Rp. 75.000</strong> per
             unit </li>
           <li>Layanan perawatan AC <br> yang dilakukan oleh teknisi profesional.</li>
-          <li>Peralatan lengkap.</li>
           <li>Tenaga kerja berpengalaman<br> dan terpercaya.</li>
         </ul>
-
-        <div class="btn-pesan">
-          <a href="pembayaran-ac.html">Pesan Sekarang</a>
-        </div>
+        <button class="btn-pesan" onclick="btnKlik('pembayaran-ac.html')">Pesan Sekarang</button>
       </div>
   </main>
 
@@ -54,6 +52,8 @@
   <footer>
     <div class="ftext">© 2024 All Rights Reserved. CleanHome</div>
   </footer>
+
+  <script src="script/layanan.js"></script>
 </body>
 
 </html>
