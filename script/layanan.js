@@ -1,3 +1,3 @@
-function btnPesan(url){
+function btnKlik(url){
   window.location.href = url;
 }
