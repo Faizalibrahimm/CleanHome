@@ -75,12 +75,27 @@ main {
   margin-top: 30px;
   display: flex;
   justify-content: space-evenly;
+  align-items: top;
+}
+
+.isi-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
   align-items: center;
 }
 
-.containerB h2 {
-  margin-right: 10%;
-  font-size: 48px;
+.isi-text h2 {
+  margin-right: 20%;
+  font-size: 40px;
+  margin-bottom: 25px;
+  margin-top: 44px;
+  margin-left: 2px;
+}
+
+.isi-text p {
+  font-size: 20px;
+  margin-left: 10px;
 }
 
 .cbimg {
