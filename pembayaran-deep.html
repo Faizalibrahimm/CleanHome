@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CleanHome</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="style/pembayaran-general.css">
+  <link rel="stylesheet" href="style/pembayaran.css">
 </head>
 
 <body>
@@ -16,55 +16,68 @@
       <ul class="navigasi-btn">
         <li><a href="index.html">Beranda</a></li>
         <li><a href="tentang.html">Tentang Kami</a></li>
-        <li><a href="#" style="color: red;">Layanan</a></li>
+        <li><a href="#"
+            style="text-decoration: underline; text-underline-offset: 8px; text-decoration-color: white;">Layanan</a>
+        </li>
         <li><a href="masuk.html">Masuk</a></li>
       </ul>
     </nav>
   </header>
 
-  <!-- Konten -->
   <main>
-    <div class="container1">
-      <div class="pkotak"><img class="pgambar" src="images/deep-cleaning-img.png" alt="cok"></div>
-      <h2>Deep Cleaning</h2>
-    </div>
-    <div class="container2">
-      <form>
-        <div class="fnama"><label for="nama"></label>
-          <input type="text" id="fnama" placeholder="Nama">
-        </div>
-        <div class="ftelepon"><label for="notelepone"></label>
-          <input type="text" id="ftelepon" placeholder="No Telepon">
-        </div>
-        <div class="falamat"><label for="alamat"></label>
-          <input type="text" id="falamat" placeholder="Alamat">
-        </div>
-      </form>
-    </div>
-    <div class="container3">
-      <div class="pdetail">
-        <h3>Detail Pemesanan</h3>
-        <p>Survey Deep Cleaning</p>
-        <p>Steam Cleaner</p>
+    <div class="kotakterl">
+      <div class="container1">
+        <div class="pkotak"><img class="pgambar" src="images/deep-cleaning-img.png" alt="gambar"></div>
+        <h2>Deep Cleaning</h2>
       </div>
-      <div class="princian">
-        <h3>Rincian Harga</h3>
-        <p>Harga Layanan</p>
-        <p>Biaya Trasportasi</p>
+
+      <div class="container2">
+        <h3 class="textA">Metode Pembayaran</h3>
+        <label class="metode"><input type="radio" checked="checked" name="radio"> BNI<span class="checkmark"></span>
+        </label>
+        <label class="metode"><input type="radio" name="radio"> BCA<span class="checkmark"></span>
+        </label>
+        <label class="metode"><input type="radio" name="radio"> QRIS<span class="checkmark"></span>
+        </label>
+      </div>
+      <!-- Pembersihan Mendalam, Pembersihan Pasca Bencana -->
+
+      <div class="container3">
+        <div class="pdetail">
+          <h3>Detail Pemesanan</h3>
+          <div class="dservice">
+            <input type="checkbox" name="checkbox"><label for="checkbox"> Pembersihan Mendalam</label>
+            <p>Harga : <ins>Rp50.000</ins></p>
+          </div>
+          <div class="dservice">
+            <input type="checkbox" name="checkbox"><label for="checkbox"> Pembersihan Pasca Bencana</label>
+            <p>Harga : <ins>Rp 70.000</ins></p>
+          </div>
+        </div>
+
+        <div class="princian">
+          <h3>Rincian Harga</h3>
+          <div class="princianA">
+            <p>Harga Layanan</p>
+            <p><ins>Rp 100.000</ins></p>
+          </div>
+          <div class="princianA">
+            <p>Biaya Trasportasi</p>
+            <p><ins>Rp 15.000</ins></p>
+          </div>
+        </div>
       </div>
     </div>
     <div class="container4">
-      <div class="ptotal">
-        <p>Total Harga Rp 0</p>
-      </div>
+      <button class="btn-kembali" type="button" onclick="btnKlik('layanan.html')">Kembali</button>
       <button class="btn-order">Pesan Sekarang</button>
     </div>
   </main>
 
-  <!-- Footer -->
   <footer>
     <div class="ftext">© 2024 All Rights Reserved. CleanHome</div>
   </footer>
+  <script src="script/layanan.js"></script>
 </body>
 
 </html>
