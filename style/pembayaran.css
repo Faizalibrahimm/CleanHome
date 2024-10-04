@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: lightskyblue;
+  width: 100%;
+  height: 15vh;
+  position: relative;
+  box-shadow: 0px 2px 4px 2px rgba(40, 40, 40, 0.5);
+  -webkit-box-shadow: 0px 2px 4px 2px rgba(40, 40, 40, 0.5);
+  -moz-box-shadow: 0px 2px 4px 2px rgba(40, 40, 40, 0.5);
+}
+
+.hcontainer {
+  display: flex;
+  width: 85%;
+  height: 15vh;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 6%;
+  height: 70%;
+}
+
+.logoimg {
+  width: 100%;
+  height: 100%;
+}
+
+.navigasi-btn {
+  display: flex;
+  list-style: none;
+}
+
+.navigasi-btn li {
+  margin-left: 24px;
+}
+
+.navigasi-btn a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  width: 100%;
+  height: 80vh;
+  padding-top: 20px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    175deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 40%,
+    lightskyblue 100%
+  );
+}
+
+.kotakterl {
+  width: 30%;
+  height: 85%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 4px;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+.container1 {
+  border-bottom: 2px solid black;
+  width: 100%;
+  height: 16%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  gap: 30px;
+}
+
+.container1 .pkotak {
+  width: 75px;
+  height: 65px;
+  margin-left: -20%;
+}
+
+.container1 .pgambar {
+  width: 95%;
+  height: 95%;
+}
+
+.container2 {
+  width: 85%;
+  height: 28%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  margin-top: 8px;
+}
+
+.container2 .textA {
+  margin-bottom: 6px;
+}
+
+.container2 .metode {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+  margin-left: 4px;
+}
+
+.container2 .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -2px;
+  margin-top: 2px;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.metode:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.metode input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.metode input:checked ~ .checkmark:after {
+  display: flex;
+}
+
+.metode .checkmark:after {
+  top: 4px;
+  left: 4px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: white;
+}
+
+.container3 {
+  width: 90%;
+  height: 50%;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container3 .pdetail {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+}
+
+.pdetail h3 {
+  margin-top: 4px;
+}
+
+.container3 .dservice {
+  font-size: 16px;
+  margin: 4px 0;
+}
+
+.pdetail .dservice p {
+  font-size: 14px;
+}
+
+.container3 .princian {
+  width: 100%;
+  height: 50%;
+  margin-left: 20px;
+}
+
+.princian h3 {
+  margin-top: 4px;
+}
+
+.princian p {
+  font-size: 16px;
+}
+
+.princian .princianA {
+  margin-top: 2px;
+}
+
+.container4 {
+  width: 30%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  margin-top: 12px;
+}
+
+.container4 .btn-kembali {
+  background-color: lightskyblue;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 8px 0;
+  width: 40%;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container4 .btn-order {
+  background-color: lightskyblue;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 8px 0;
+  width: 40%;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.container4 .btn-kembali:hover {
+  color: white;
+}
+
+.container4 .btn-order:hover {
+  color: white;
+}
+
+footer {
+  background-color: lightskyblue;
+  width: 100%;
+  height: 5vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ftext {
+  font-size: 12px;
+}
