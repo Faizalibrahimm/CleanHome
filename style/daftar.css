@@ -90,8 +90,9 @@ main {
 }
 
 .btn-daftar {
-  background-color: lightskyblue;
-  border: 2px solid white;
+  color: lightskyblue;
+  background-color: black;
+  border: 2px solid lightskyblue;
   border-radius: 20px;
   width: 60%;
   padding: 5px 0;
@@ -101,9 +102,9 @@ main {
 }
 
 .btn-daftar:hover {
+  color: white;
   background-color: black;
   border: 2px solid lightskyblue;
-  color: lightskyblue;
 }
 
 footer {
