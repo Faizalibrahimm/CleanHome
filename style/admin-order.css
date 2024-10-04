@@ -1,0 +1,246 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  height: 120vh;
+}
+
+.container {
+  display: flex;
+}
+.sidebar {
+  width: 230px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  height: 112vh;
+}
+.sidebar img {
+  width: 50px;
+  height: 50px;
+}
+.sidebar h1 {
+  font-size: 24px;
+  color: #000;
+}
+.sidebar a {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  margin: 20px 0;
+  font-size: 18px;
+}
+.sidebar a.active {
+  color: #4a90e2;
+}
+.sidebar a i {
+  margin-right: 10px;
+}
+.sidebar .logout {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #000;
+}
+.main-content {
+  flex: 1;
+  padding: 20px;
+  /*background-color: #fff;*/
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header .search-bar {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 5px 10px;
+}
+.header .search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background-color: ghostwhite;
+}
+.header .search-bar i {
+  color: #ccc;
+}
+.header .profile {
+  display: flex;
+  align-items: center;
+}
+.header .profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.header .profile .name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.header .profile .role {
+  font-size: 14px;
+  color: #888;
+}
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.stats .stat {
+  background-color: #d9f1ff;
+  padding: 20px;
+  height: 100px;
+  border-radius: 10px;
+  text-align: center;
+  flex: 1;
+  margin-right: 20px;
+}
+.stats .stat:last-child {
+  margin-right: 0;
+}
+.stats .stat h2 {
+  font-size: 36px;
+  margin: 0;
+  color: #000;
+}
+.stats .stat p {
+  margin: 5px 0;
+  color: #888;
+}
+.stats .stat .percentage {
+  color: #4caf50;
+}
+.services {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.services .service {
+  flex: 1;
+  margin-right: 20px;
+  position: relative;
+}
+.services .service:last-child {
+  margin-right: 0;
+}
+.services .service img {
+  width: 100%;
+  border-radius: 10px;
+}
+.services .service .label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.latest-orders {
+  background-color: #d9f1ff;
+  padding: 20px;
+  border-radius: 10px;
+}
+.latest-orders h2 {
+  margin: 0 0 20px 0;
+  color: #000;
+}
+.latest-orders .order {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.latest-orders .order:last-child {
+  margin-bottom: 0;
+}
+.latest-orders .order img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.latest-orders .order .details {
+  flex: 1;
+}
+.latest-orders .order .details .name {
+  font-size: 18px;
+  color: #000;
+}
+.latest-orders .order .details .service {
+  font-size: 14px;
+  color: #4caf50;
+}
+.latest-orders .order .price1 {
+  font-size: 18px;
+  color: #000;
+  margin-right: 60px;
+}
+.latest-orders .order .price2 {
+  font-size: 18px;
+  color: #000;
+  margin-right: 30px;
+}
+.latest-orders .order .price3 {
+  font-size: 18px;
+  color: #000;
+  margin-right: 60px;
+}
+.latest-orders .order .time1 {
+  font-size: 14px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+.latest-orders .order .time2 {
+  font-size: 14px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+.latest-orders .order .time3 {
+  font-size: 14px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+.latest-orders .order .payment1 {
+  font-size: 14px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+.latest-orders .order .payment2 {
+  font-size: 14px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+.latest-orders .order .payment3 {
+  font-size: 14px;
+  color: #4caf50;
+  margin-right: 10px;
+}
+.latest-orders .order .date {
+  font-size: 14px;
+  color: darkolivegreen;
+}
+
+footer {
+  background-color: lightskyblue;
+  width: 100%;
+  height: 5vh;
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ftext {
+  font-size: 12px;
+}

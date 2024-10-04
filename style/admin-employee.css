@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+.container {
+    display: flex;
+}
+.sidebar {
+    width: 230px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    height: 116vh;
+}
+.sidebar img {
+    width: 50px;
+    height: 50px;
+}
+.sidebar h1 {
+    font-size: 24px;
+    color: #000;
+}
+.sidebar a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+    margin: 20px 0;
+    font-size: 18px;
+}
+.sidebar a.active {
+    color: #007bff;
+}
+.sidebar a i {
+    margin-right: 10px;
+}
+
+.sidebar .logout {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #000;
+  }
+  
+.content {
+    flex: 1;
+    padding: 20px;
+    /*background-color: #fff;*/
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.header .search-bar {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 10px;
+}
+.header .search-bar input {
+    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: ghostwhite;
+}
+
+.header .search-bar i {
+    color: #ccc;
+}
+
+.header .profile {
+    display: flex;
+    align-items: center;
+}
+.header .profile img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.header .profile .name {
+    font-size: 18px;
+    font-weight: bold;
+}
+.header .profile .role {
+    font-size: 14px;
+    color: #888;
+}
+.task-card {
+    background-color: #b3e5fc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.task-card h2 {
+    font-size: 24px;
+    margin: 0;
+}
+.task-card p {
+    font-size: 14px;
+    color: #555;
+}
+.task-card .stats {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+.task-card .stats div {
+    text-align: center;
+}
+.task-card .stats div h3 {
+    font-size: 36px;
+    margin: 0;
+}
+.task-card .stats div p {
+    font-size: 14px;
+    color: #555;
+}
+.task-card table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.task-card table th, .task-card table td {
+    padding: 10px;
+    text-align: left;
+}
+.task-card table th {
+    background-color: #81d4fa;
+    font-size: 14px;
+}
+.task-card table td {
+    background-color: #e1f5fe;
+    font-size: 14px;
+}
+.task-card table td img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+.status.non-active {
+    color: red;
+}
+.edit {
+    text-align: center;
+}
+.edit i {
+    color: #007bff;
+    cursor: pointer;
+}
+
+footer {
+    background-color: lightskyblue;
+    width: 100%;
+    height: 5vh;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ftext {
+    font-size: 12px;
+  }
+  
